@@ -4,6 +4,7 @@ metadata:
   labels:
     name: spark-worker
   name: spark-worker
+  namespace: latreider
 spec:
   replicas: 1
   template:

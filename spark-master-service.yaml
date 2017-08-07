@@ -4,6 +4,7 @@ metadata:
   name: spark-master
   labels:
     name: spark-master
+  namespace: latreider
 spec:
   ports:
     # the port that this service should serve on
