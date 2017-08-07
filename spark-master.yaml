@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name : spark-master
-        image: spark-2.1.1-bin-hadoop2.7 
+        image: hlatreider/spark-2.1.1
         imagePullPolicy: "IfNotPresent"
         name: spark-master
         ports:
