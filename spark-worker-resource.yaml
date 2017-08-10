@@ -13,7 +13,7 @@ spec:
         name: spark-worker
     spec:
       containers:
-      - image: spark-2.1.1-bin-hadoop2.7 
+      - image: hlatreider/spark_2.1.1  
         imagePullPolicy : "IfNotPresent"
         name: spark-worker
         ports:
