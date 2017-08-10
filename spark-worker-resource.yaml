@@ -19,17 +19,9 @@ spec:
         ports:
         - containerPort: 7078
           protocol: TCP
-        resources :
-          requests :
-            cpu : 1
-            memory : "6Gi"
-          limits :
-             cpu : 1
-             memory : "6Gi"
-
         command:
          - "/bin/bash"
          - "-c"
          - "--"
         args :
-                - '. ./start-common.sh ; /opt/spark/sbin/start-slave.sh spark://spark-master:7077 -c 1 -m 6G ; sleep infinity'
+                - '. ./start-common.sh ; /opt/spark/sbin/start-slave.sh spark://spark-master:7077 -c 1 -m 30G ; sleep infinity'
