@@ -22,14 +22,14 @@ spec:
         resources :
           requests :
             cpu : 1
-            memory : "512Mi"
+            memory : "6Gi"
           limits :
              cpu : 1
-             memory : "1Gi"
+             memory : "6Gi"
 
         command:
          - "/bin/bash"
          - "-c"
          - "--"
         args :
-                - '. ./start-common.sh ; /opt/spark/sbin/start-slave.sh spark://spark-master:7077 -c 1 -m 1G ; sleep infinity'
+                - '. ./start-common.sh ; /opt/spark/sbin/start-slave.sh spark://spark-master:7077 -c 1 -m 6G ; sleep infinity'
