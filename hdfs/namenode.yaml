@@ -40,7 +40,7 @@ spec:
           env:
             - name: CLUSTER_NAME
               value: hdfs-k8s
-            - name: HDFS_CONF_dfs_namenode_datanode_registration.ip___hostname___check
+            - name: HDFS_CONF_dfs_namenode_datanode_registration_ip___hostname___check
               value: false
           ports:
           - containerPort: 8020
